@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="login" id="loginId">
+        <div id="frame2" onclick="loginToggle()"></div>
+        <div class="login_card" id="login_card">
+            <div class="flex justify-end pt-3.5 pr-4">
+                <a href="javascript:void(0)"><img onclick="loginToggle()" src="./assets/svg/loginX.svg" alt=""></a>
+            </div>
+            <div class="login_container">
+                <div class="flex justify-center gap-3 text-xl">
+                    <a class="color_green" href="javascript:void(0)">Login</a>
+                    <img src="./assets/svg/login_stick.svg" alt="">
+                    <a href="javascript:void(0)">Register</a>
+                </div>
+                <p class="color_3d text_13 pt-14">
+                    Enter your username and password to login.
+                </p>
+                <div class="pt-3.5">
+                    <input class="mailInput w-full login_input" type="mail" placeholder="almamun_uxui@outlook.com" required>
+                </div>
+                <div class="relative login_password pt-4">
+                    <input class="w-full login_input" type="password" placeholder="Enter the password" required>
+                    <button class=""><img src="./assets/svg/Hide.svg" alt=""></button>
+                </div>
+                <div class="text-end mt-3.5 color_green mb-10">
+                    <a href="javascript:void(0)">Forgot Password?</a>
+                </div>
+                <a class="login_btn2" href="javascript:void(0)">Login</a>
+                <div class="max-sm:mt-6 mt-14 color_3d text_13 text-center flex justify-between">
+                    <img src="./assets/svg/login_with.svg" alt="">
+                    <span>Or login with</span>
+                    <img src="./assets/svg/login_with.svg" alt="">
+                </div>
+                <a class="flex justify-center max-sm:mt-4 mt-8 gap-2.5 py-2.5 login_with" href="javascript:void(0)">
+                    <img src="./assets/svg/Login_chrome.svg" alt="">
+                    <span>Login with Google</span>
+                </a>
+                <a class="flex justify-center max-sm:mt-2 mt-3.5 gap-2.5 py-2.5 login_with" href="javascript:void(0)">
+                    <img src="./assets/svg/login_Facebook.svg" alt="">
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shopping" id="shoppingId">
+        <div id="frame3" onclick="shoppingToggle()"></div>
+        <div class="shopping_card" id="shopping_card">
+            <div class="shopping_card_inner">
+                <div class="flex justify-end pt-3.5 pr-4">
+                    <a href="javascript:void(0)"><img onclick="shoppingToggle()" src="./assets/svg/loginX.svg" alt=""></a>
+                </div>
+                <div class="flex justify-center">
+                    <img src="./assets/svg/thankYou.svg" alt="">
+                </div>
+                <div class="color_72 text-center">
+                    Your order has been received
+                </div>
+            </div>
+            <div class="flex justify-between py-3 px-8 text_14">
+                <div class="color_72 border-r pr-3">
+                    <span class="font-normal">Order Number</span> <br>
+                    <span class="font-bold">19586687</span>
+                </div>
+                <div class="color_72 border-r pr-3">
+                    <span class="font-normal">Date</span> <br>
+                    <span class="font-bold">15 Sep, 2021</span>
+                </div>
+                <div class="color_72 border-r pr-3">
+                    <span class="font-normal">Total</span> <br>
+                    <span class="font-bold">2,699.00</span>
+                </div>
+                <div class="color_72">
+                    <span class="font-normal">Payment Method</span> <br>
+                    <span class="font-bold">Cash on delivery</span>
+                </div>
+            </div>
+            <div class="shopping_container">
+                <p class="color_3d text_13 pt-14">
+                    Enter your username and password to login.
+                </p>
+                <div class="pt-3.5">
+                    <input class="mailInput w-full login_input" type="mail" placeholder="almamun_uxui@outlook.com">
+                </div>
+                <div class="relative login_password pt-4">
+                    <input class="w-full login_input" type="password" placeholder="Enter the password">
+                    <button class=""><img src="./assets/svg/Hide.svg" alt=""></button>
+                </div>
+                <div class="text-end mt-3.5 color_green mb-10">
+                    <a href="javascript:void(0)">Forgot Password?</a>
+                </div>
+                <div class="max-sm:mt-6 mt-14 color_3d text_13 text-center mb-4">
+                    Your order is currently being processed. You will receive an order confirmation email shortly with the expected delivery date for your items.
+                </div>
+                <div class="flex justify-center">
+                    <a class="find_btn" href="">Track your order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <nav class="flex justify-between pt-6 pb-4 items-center">
+            <div class="md:hidden" id="frame" onclick="navToggle()"></div>
+            <div>
+                <img src="./assets/svg/nav_logo.svg" alt="">
+            </div>
+            <div id="navBar" class="navBar flex gap-12 max-lg:gap-4 ">
+                <a class="nav__link" href="javascript:void(0)">Home</a>
+                <a class="nav__link" href="javascript:void(0)">Shop</a>
+                <a class="nav__link" href="javascript:void(0)">Plant Care</a>
+                <a class="nav__link" href="javascript:void(0)">Blogs</a>
+            </div>
+            <div class="flex gap-7 items-center max-sm:gap-2">
+                <a href=""><img src="./assets/svg/nav_search.svg" alt=""></a>
+                <a onclick="shoppingToggle()" href="javascript:void(0)"><img src="./assets/svg/nav_bucket.svg" alt=""></a>
+                <a onclick="loginToggle()" class="nav__logout flex" href="javascript:void(0)">
+                    <img src="./assets/svg/Logout.svg" alt="">
+                    <span>Login</span>
+                </a>
+                <i onclick="navToggle()" id="navBars" class="fa-solid fa-bars md:hidden"></i>
+                <i onclick="navToggle()" id="navX" class="fa-solid fa-x hidden"></i>
+            </div>
+        </nav>
+        <header class="flex justify-between max-lg:flex-col">
+            <div class="pl-10 sm:pt-16 pb-4 max-md:pr-10">
+                <div class="color_3d pt-16 tracking-widest text_14">
+                    Welcome to GreenShop
+                </div>
+                <div class="max-w-xl color_3d uppercase font-black text-7xl pt-2">
+                    Let’s Make a
+                    Better <span class="text-green-500">Planet</span>
+                </div>
+                <p class="max-w-lg pt-1 color_72 font-normal text_14 mb-10">
+                    We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
+                    create an unique Urban Jungle. Order your favorite plants!
+                </p>
+                <a class="header_btn" href="javascript:void(0)">SHOP NOW</a>
+            </div>
+            <div>
+                <img class="w-full max-lg:w-4/5 max-sm:w-full" src="./assets/images/headerImage.png" alt="">
+            </div>
+        </header>
+
+        <main class="flex mt-12 gap-12 max-sm:flex-col">
+            <div class="categories">
+                <div class="pt-3.5 pr-6 pb-5 pl-4 ">
+                    <div class="text-lg font-bold color_3d">
+                        Categories
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>House Plants</div><div>34</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Seeds</div><div>24</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Small Plants</div><div>24</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Big Plants</div><div>24</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Succulents</div><div>24</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Trerrariums</div><div>24</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Gardening</div><div>45</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Accessories</div><div>54</div>
+                    </div>
+                    <div class="text-lg font-bold color_3d py-5 ">
+                        Price Range
+                    </div>
+                    <div class="green_range pl-3">
+                        <input  type="range" name="range" id="">
+                    </div>
+                    <div class="pb-4 font-normal pl-3">
+                        Price: <span class="color_green">$39 - $1230</span>
+                    </div>
+                    <div class="pl-3">
+                        <a class="filter" href="javascript:void(0)">
+                            Filter
+                        </a>
+                    </div>
+                    <div class="text-lg font-bold color_3d pt-12">
+                        Size
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Small</div><div>(119)</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Medium</div><div>(86)</div>
+                    </div>
+                    <div class="plants color_72 pl-3">
+                        <div>Large</div><div>(78)</div>
+                    </div>
+                </div>
+                <div class="max-sm:w-full">
+                    <img class="max-sm:w-full" src="./assets/images/superSale.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-10 max-lg:flex-col-reverse gap-2">
+                    <div class="flex gap-8">
+                        <a class="pro_link" href="javasript:void(0)">All Plants</a>
+                        <a class="pro_link" href="javasript:void(0)">New Arrivals</a>
+                        <a class="pro_link" href="javasript:void(0)">Sale</a>
+                    </div>
+                    <div class="flex gap-2 color_3d max-sm:pb-5">
+                        <span>Short by: Default sorting</span>
+                        <img class="cursor-pointer" src="./assets/svg/down1.svg" alt="">
+                    </div>
+                </div>
+                <div class="products grid grid-cols-3 gap-8 gap-y-9 max-lg:grid-cols-2 max-md:grid-cols-1">
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product1.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="color_3d font-normal mt-3">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product1.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="color_3d font-normal mt-3">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product3.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="color_3d font-normal mt-3">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product3.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="color_3d font-normal mt-3">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product4.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="color_3d font-normal mt-3">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product5.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="color_3d font-normal mt-3">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product6.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="color_3d font-normal mt-3">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product7.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product__name">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                    <div class="product__cart">
+                        <div class="product__image">
+                            <div>
+                                <img class="w-full" src="./assets/images/product8.png" alt="">
+                            </div>
+                            <div class="flex gap-2.5 justify-center">
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_bucket.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/pro_search.svg" alt="">
+                                </a>
+                                <a class="under_image" href="javasript:void(0)">
+                                    <img src="./assets/svg/heart.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product__name">
+                            Barberton Daisy
+                        </div>
+                        <div class="product__price">
+                            $119.00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="flex gap-2 justify-between max-lg:flex-col">
+            <div class="cactus justify-between flex p-1 max-sm:flex-col max-sm:pb-8">
+                <div>
+                    <img class="w-full" src="./assets/images/cactus1.png" alt="">
+                </div>
+                <div class="sm:text-end pr-4 max-sm:pl-3">
+                    <div class="font-black text-lg uppercase color_3d pt-10">
+                        Summer cactus <br>
+                        & succulents
+                    </div>
+                    <div class="text_14 color_72 pt-2 pb-10">
+                        We are an online plant shop offering a wide <br> 
+                        range of cheap and trendy plants
+                    </div>
+                    <a class="find_btn" href="">Find More</a>
+                </div>
+            </div>
+            <div class="cactus flex justify-between p-1 max-sm:flex-col max-sm:pb-8">
+                <div>
+                    <img class="w-full" src="./assets/images/cactus2.png" alt="">
+                </div>
+                <div class="sm:text-end pr-4 max-sm:pl-3">
+                    <div class="font-black text-lg uppercase color_3d pt-10">
+                        Summer cactus <br>
+                        & succulents
+                    </div>
+                    <div class="text_14 color_72 pt-2 pb-10">
+                        We are an online plant shop offering a wide <br> 
+                        range of cheap and trendy plants
+                    </div>
+                    <a class="find_btn" href="">Find More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogs">
+            <div class="text-3xl color_3d text-center">
+                Our Blog Posts
+            </div>
+            <div class="color_72 text_14 text-center pt-4">
+                We are an online plant shop offering a wide range of cheap and trendy plants. 
+            </div>
+
+            <div class="grid grid-cols-4 gap-12 pt-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
+                <div class="blogs_card">
+                    <div>
+                        <img class="w-full" src="./assets/images/bogs2.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <div class="color_green pt-2">
+                            September 12  I Read in 6 minutes
+                        </div>
+                        <div class="color_3d text-xl pt-1">
+                            Cactus & Succulent 
+                            Care Tips
+                        </div>
+                        <div class="color_72 pt-1 pb-2">
+                            Cacti are succulents are easy care plants for any home or. 
+                        </div>
+                        <div class="flex cursor-pointer gap-2">
+                            <span>Read More</span>
+                            <img src="./assets/svg/Arrow - Right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs_card">
+                    <div>
+                        <img class="w-full" src="./assets/images/bogs1.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <div class="color_green pt-2">
+                            September 13  I Read in 2 minutes
+                        </div>
+                        <div class="color_3d text-xl pt-1">
+                            Top 10 Succulents for Your Home
+                        </div>
+                        <div class="color_72 pt-1 pb-2">
+                            Best in hanging baskets. Prefers medium to high light.
+                        </div>
+                        <div class="flex cursor-pointer gap-2">
+                            <span>Read More</span>
+                            <img src="./assets/svg/Arrow - Right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs_card">
+                    <div>
+                        <img class="w-full" src="./assets/images/bogs3.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <div class="color_green pt-2">
+                            September 15  I Read in 3 minutes
+                        </div>
+                        <div class="color_3d text-xl pt-1">
+                            Cacti & Succulent Care Tips hc
+                        </div>
+                        <div class="color_72 pt-1 pb-2">
+                            Cacti and succulents thrive in containers and because most .
+                        </div>
+                        <div class="flex cursor-pointer gap-2">
+                            <span>Read More</span>
+                            <img src="./assets/svg/Arrow - Right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs_card">
+                    <div>
+                        <img class="w-full" src="./assets/images/bogs4.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <div class="color_green pt-2">
+                            September 15  I Read in 2 minutes
+                        </div>
+                        <div class="color_3d text-xl pt-1">
+                            Best Houseplants Room by Room
+                        </div>
+                        <div class="color_72 pt-1 pb-2">
+                            The benefits of houseplants are endless. In addition to..
+                        </div>
+                        <div class="flex cursor-pointer gap-2">
+                            <span>Read More</span>
+                            <img src="./assets/svg/Arrow - Right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="py-6 flex mt-24 max-lg:grid max-lg:grid-cols-2 max-lg:gap-8 max-sm:grid-cols-1">
+            <div class="lg-border-r  px-6 ">
+                <div>
+                    <img class="max-sm:w-full" src="./assets/svg/footer_cac.svg" alt="">
+                </div>
+                <div class="max-sm:text-center">
+                    <div class="color_3d pt-4">
+                        Garden Care
+                    </div>
+                    <p class="color_72 text_14">
+                        We are an online plant shop offering a wide range of cheap and trendy plants.
+                    </p>
+                </div>
+            </div>
+            <div class="lg-border-r  px-6">
+                <div>
+                    <img class="max-sm:w-full" src="./assets/svg/footer_cac2.svg" alt="">
+                </div>
+                <div class="max-sm:text-center">
+                    <div class="color_3d pt-4">
+                        Plant Renovation
+                    </div>
+                    <p class="color_72 text_14">
+                        We are an online plant shop offering a wide range of cheap and trendy plants.
+                    </p>
+                </div>
+            </div>
+            <div class=" px-6">
+                <div>
+                    <img class="max-sm:w-full" src="./assets/svg/footer_cac3.svg" alt="">
+                </div>
+                <div class="max-sm:text-center">
+                    <div class="color_3d pt-4">
+                        Watering Graden
+                    </div>
+                    <p class="color_72 text_14">
+                        We are an online plant shop offering a wide range of cheap and trendy plants.
+                    </p>
+                </div>
+            </div>
+            <div class="footer_in max-sm:pr-4">
+                <div class="color_3d text-lg">
+                    Would you like to join newsletters?
+                </div>
+                <div class="footer__input">
+                    <label>
+                        <input type="email" name="email" placeholder="enter your email address...">
+                        <button type="submit">join</button>
+                    </label>
+                </div>
+                <p class="color_72 pt-4 text_13">
+                    We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! 
+                </p>
+            </div>
+        </footer>
+        <div class="footer_green flex gap-20 max-lg:grid max-lg:grid-cols-2 max-lg:gap-8 max-sm:grid-cols-1">
+            <div>
+                <img src="./assets/svg/foote_logo.svg" alt="">
+            </div>
+            <div class="flex items-center gap-3 text_14">
+                <img src="./assets/svg/Location.svg" alt="">
+                <span>
+                    70 West Buckingham Ave. <br>
+                    Farmingdale, NY 11735
+                </span>
+            </div>
+            <div class="flex items-center gap-3 text_14">
+                <img src="./assets/svg/Message.svg" alt="">
+                <span>
+                    contact@greenshop.com
+                </span>
+            </div>
+            <div class="flex items-center gap-3 text_14">
+                <img src="./assets/svg/Calling.svg" alt="">
+                <span>
+                    +88 01911 717 490
+                </span>
+            </div>
+        </div>
+
+        <footer class="p-5 second_footer max-lg:grid-cols-2 max-lg:gap-8 max-sm:grid-cols-1 max-sm:justify-center">
+            <div>
+                <div class="color text-lg">My Account</div>
+                <div class="text_14 pt-3 color_3d">My Account</div>
+                <div class="text_14 pt-3 color_3d">Our stores</div>
+                <div class="text_14 pt-3 color_3d">Contact us</div>
+                <div class="text_14 pt-3 color_3d">Career</div>
+                <div class="text_14 pt-3 color_3d">Specials</div>
+            </div>
+            <div>
+                <div class="color text-lg">Help & Guide</div>
+                <div class="text_14 pt-3 color_3d">Help Center</div>
+                <div class="text_14 pt-3 color_3d">How to Buy</div>
+                <div class="text_14 pt-3 color_3d">Shipping & Delivery</div>
+                <div class="text_14 pt-3 color_3d">Product Policy</div>
+                <div class="text_14 pt-3 color_3d">How to Return</div>
+            </div>
+            <div>
+                <div class="color text-lg">Categories</div>
+                <div class="text_14 pt-3 color_3d">House Plants</div>
+                <div class="text_14 pt-3 color_3d">Potter Plants</div>
+                <div class="text_14 pt-3 color_3d">Seeds</div>
+                <div class="text_14 pt-3 color_3d">Small</div>
+                <div class="text_14 pt-3 color_3d">Plants Accessories</div>
+            </div>
+            <div>
+                <div class="color text-lg">Social Media</div>
+                <div class="flex gap-2.5 pt-5">
+                    <a href="javascript:void(0)"><img src="./assets/svg/foot_face.svg" alt=""></a>
+                    <a href="javascript:void(0)"><img src="./assets/svg/foot_insta.svg" alt=""></a>
+                    <a href="javascript:void(0)"><img src="./assets/svg/foot_twi.svg" alt=""></a>
+                    <a href="javascript:void(0)"><img src="./assets/svg/foot_in.svg" alt=""></a>
+                    <a href="javascript:void(0)"><img src="./assets/svg/foot_you.svg" alt=""></a>
+                </div>
+                <div class="color text-lg mt-8">We accept</div>
+                <div class="mt-3">
+                    <img src="./assets/svg/footer_exept.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
