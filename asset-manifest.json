@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e166c0c0.css",
+    "main.js": "/static/js/main.d2c39160.js",
+    "static/js/453.1cff1c0e.chunk.js": "/static/js/453.1cff1c0e.chunk.js",
+    "static/media/exclamation_message.svg": "/static/media/exclamation_message.4a6ce694da85010bd5627d27b794459d.svg",
+    "index.html": "/index.html",
+    "main.e166c0c0.css.map": "/static/css/main.e166c0c0.css.map",
+    "main.d2c39160.js.map": "/static/js/main.d2c39160.js.map",
+    "453.1cff1c0e.chunk.js.map": "/static/js/453.1cff1c0e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e166c0c0.css",
+    "static/js/main.d2c39160.js"
+  ]
+}
